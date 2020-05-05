@@ -1,4 +1,4 @@
-# Practical-training-system
+# practical-training-system
 
 ## Description
 
