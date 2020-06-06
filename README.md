@@ -5,7 +5,7 @@
 ### What problem does this software solve or what's new for users?
 
 - Learning management:
-  - помощь студентам сориентироваться в системе выполнения практических заданий
+  - help students navigate the system of practical tasks
   - максимальное освоение практических навыков
   - журнал заданий (предыдущие, текущие, будущие задания)
   - получение практического задания
