@@ -6,7 +6,7 @@
 
 - Learning management:
   - help students navigate the system of practical tasks
-  - максимальное освоение практических навыков
+  - maximum mastery of practical skills
   - журнал заданий (предыдущие, текущие, будущие задания)
   - получение практического задания
   - получение теоретического материала к заданию (текст, видео, аудио и т.п.)
