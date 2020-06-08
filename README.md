@@ -7,7 +7,7 @@
 - Learning management:
   - help students navigate the system of practical tasks
   - maximum mastery of practical skills
-  - журнал заданий (предыдущие, текущие, будущие задания)
+  - task log (previous, current, future tasks)
   - получение практического задания
   - получение теоретического материала к заданию (текст, видео, аудио и т.п.)
   - helper "Вопрос-ответ" (возникающий вопрос студента - ответ преподавателя на вопрос)  
