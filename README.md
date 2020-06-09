@@ -8,7 +8,7 @@
   - help students navigate the system of practical tasks
   - maximum mastery of practical skills
   - task log (previous, current, future tasks)
-  - получение практического задания
+  - getting a practical task
   - получение теоретического материала к заданию (текст, видео, аудио и т.п.)
   - helper "Вопрос-ответ" (возникающий вопрос студента - ответ преподавателя на вопрос)  
   - отправка преподавателю выполненного задания
