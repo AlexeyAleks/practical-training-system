@@ -9,7 +9,7 @@
   - maximum mastery of practical skills
   - task log (previous, current, future tasks)
   - getting a practical task
-  - получение теоретического материала к заданию (текст, видео, аудио и т.п.)
+  - getting theoretical material for the assignment (text, video, audio, etc.)
   - helper "Вопрос-ответ" (возникающий вопрос студента - ответ преподавателя на вопрос)  
   - отправка преподавателю выполненного задания
   - получение проверенного задания с выделением ошибок и комментариями к ним
