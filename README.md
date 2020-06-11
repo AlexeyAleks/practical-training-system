@@ -10,7 +10,7 @@
   - task log (previous, current, future tasks)
   - getting a practical task
   - getting theoretical material for the assignment (text, video, audio, etc.)
-  - helper "Вопрос-ответ" (возникающий вопрос студента - ответ преподавателя на вопрос)  
+  - helper “Question-answer” (student’s question - teacher’s answer to the question)  
   - отправка преподавателю выполненного задания
   - получение проверенного задания с выделением ошибок и комментариями к ним
   - анализ допущенных ошибок
