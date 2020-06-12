@@ -11,7 +11,7 @@
   - getting a practical task
   - getting theoretical material for the assignment (text, video, audio, etc.)
   - helper “Question-answer” (student’s question - teacher’s answer to the question)  
-  - отправка преподавателю выполненного задания
+  - sending completed assignment to teacher
   - получение проверенного задания с выделением ошибок и комментариями к ним
   - анализ допущенных ошибок
   - корректировка ошибочных решений
