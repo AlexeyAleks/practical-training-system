@@ -12,7 +12,7 @@
   - getting theoretical material for the assignment (text, video, audio, etc.)
   - helper “Question-answer” (student’s question - teacher’s answer to the question)  
   - sending completed assignment to teacher
-  - получение проверенного задания с выделением ошибок и комментариями к ним
+  - receiving a verification task with highlighting errors and comments on them
   - анализ допущенных ошибок
   - корректировка ошибочных решений
 
