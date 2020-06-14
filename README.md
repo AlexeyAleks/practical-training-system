@@ -13,7 +13,7 @@
   - helper “Question-answer” (student’s question - teacher’s answer to the question)  
   - sending completed assignment to teacher
   - receiving a verification task with highlighting errors and comments on them
-  - анализ допущенных ошибок
+  - error analysis
   - корректировка ошибочных решений
 
 ### Потенциальные пользователи
