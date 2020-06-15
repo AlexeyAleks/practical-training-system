@@ -14,7 +14,7 @@
   - sending completed assignment to teacher
   - receiving a verification task with highlighting errors and comments on them
   - error analysis
-  - корректировка ошибочных решений
+  - correction of erroneous decisions
 
 ### Потенциальные пользователи
 
