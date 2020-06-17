@@ -16,7 +16,7 @@
   - error analysis
   - correction of erroneous decisions
 
-### Потенциальные пользователи
+### Potential users
 
 - Студенты
 - Преподаватели
