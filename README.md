@@ -19,7 +19,7 @@
 ### Potential users
 
 - students
-- Преподаватели
+- teachers
 
 ### Аналогичные приложения
 
