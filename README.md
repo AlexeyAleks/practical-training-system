@@ -21,7 +21,7 @@
 - students
 - teachers
 
-### Аналогичные приложения
+### Similar applications
 
 - MyStat
 - etc
