@@ -28,7 +28,7 @@
 
 ### Competitive advantage
 
-- Полная информационная поддержка при выполнении поставленных заданий (теоретический материал к каждому заданию, Helper "Вопрос-ответ")
+- full informational support in fulfilling the tasks set ( theoretical material for each task, helper “Question and answer” )
 - Анализ допущенных ошибок
 - Корректировка ошибочных решений
 - Возможность использования веб-сервиса — GitHub.
