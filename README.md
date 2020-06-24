@@ -29,7 +29,7 @@
 ### Competitive advantage
 
 - full informational support in fulfilling the tasks set ( theoretical material for each task, helper “Question and answer” )
-- Анализ допущенных ошибок
+- error analysis
 - Корректировка ошибочных решений
 - Возможность использования веб-сервиса — GitHub.
 
