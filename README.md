@@ -31,7 +31,7 @@
 - full informational support in fulfilling the tasks set ( theoretical material for each task, helper “Question and answer” )
 - error analysis
 - correction of erroneous decisions
-- Возможность использования веб-сервиса — GitHub.
+- the ability to use the web service - GitHub
 
 ### MindMap
 
