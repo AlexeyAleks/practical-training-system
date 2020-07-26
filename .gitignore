@@ -1,7 +1,7 @@
 # IntelliJ IDEA
 .idea/
 out/
-*.iml
+# *.iml
 
 # Apache Maven
 target/
