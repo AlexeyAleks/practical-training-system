@@ -28,7 +28,7 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public User readById(int id,  Session session) {
+    public User readById(int id, Session session) {
         Transaction transaction = session.beginTransaction();
         User user = session.find(User.class, id);
         transaction.commit();
