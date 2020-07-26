@@ -31,6 +31,13 @@ public class User {
     @Column
     private String password;
 
+    public User(String firstName, String lastName, String email, String password) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+    }
+
     public User() {
     }
 
@@ -80,5 +87,16 @@ public class User {
 
     public void setGroupSet(Set<Group> groupSet) {
         this.groupSet = groupSet;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 }

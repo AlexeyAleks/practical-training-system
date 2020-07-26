@@ -1,11 +1,14 @@
 package com.alexey.dao;
 
+
+import org.hibernate.Session;
+
 public interface Dao<T> {
-    void creat(T t);
+    void create(T t, Session s);
 
-    T readById(int id);
+    T readById(int id, Session s);
 
-    void update(T t);
+    void update(T t, Session s);
 
-    void delete(T t);
+    void delete(T t, Session s);
 }

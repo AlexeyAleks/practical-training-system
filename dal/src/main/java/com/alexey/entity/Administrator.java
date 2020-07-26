@@ -14,6 +14,7 @@ public class Administrator extends User {
     private int userId;
 
     public Administrator() {
+        super();
     }
 
     public String getPermission() {

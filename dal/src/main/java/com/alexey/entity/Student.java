@@ -14,6 +14,7 @@ public class Student extends User {
     private int userId;
 
     public Student() {
+        super();
     }
 
     public String getPermission() {

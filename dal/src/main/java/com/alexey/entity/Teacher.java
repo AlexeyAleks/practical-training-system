@@ -14,6 +14,7 @@ public class Teacher extends User {
     private int userId;
 
     public Teacher() {
+        super();
     }
 
     public String getPermission() {
