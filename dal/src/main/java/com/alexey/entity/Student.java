@@ -1,8 +1,17 @@
 package com.alexey.entity;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "student")
+@PrimaryKeyJoinColumn(name = "id")
 public class Student extends User {
-    String permission;
-    int user_id;
+
+    @Column
+    private String permission;
+
+    @JoinColumn(name = "user_id")
+    private int userId;
 
     public Student() {
     }
@@ -15,11 +24,11 @@ public class Student extends User {
         this.permission = permission;
     }
 
-    public int getUser_id() {
-        return user_id;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 }

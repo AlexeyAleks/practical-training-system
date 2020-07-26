@@ -1,7 +1,16 @@
 package com.alexey.entity;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "user_group_link")
 public class UserGroupLink {
+
+    @Id
+    @Column(name = "user_id")
     int userId;
+
+    @Column(name = "group_id")
     int groupId;
 
     public UserGroupLink() {

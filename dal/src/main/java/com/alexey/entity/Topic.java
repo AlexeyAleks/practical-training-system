@@ -1,10 +1,23 @@
 package com.alexey.entity;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "topic")
 public class Topic {
-    int id;
-    String name;
-    String content;
-    int courseId;
+    @Id
+    @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    @Column
+    private String name;
+
+    @Column
+    private String content;
+
+    @JoinColumn(name = "course_id")
+    private int courseId;
 
     public Topic() {
     }
