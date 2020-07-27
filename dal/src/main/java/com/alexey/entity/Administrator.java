@@ -13,8 +13,13 @@ public class Administrator extends User {
     @JoinColumn(name = "user_id")
     private int userId;
 
+    public Administrator(String firstName, String lastName, String email, String password, String permission, int userId) {
+        super(firstName, lastName, email, password);
+        this.permission = permission;
+        this.userId = userId;
+    }
+
     public Administrator() {
-        super();
     }
 
     public String getPermission() {

@@ -9,7 +9,7 @@ import java.util.List;
 public class Course {
     @OneToMany
     @JoinColumn(name = "course_id")
-    private List<Topic> topicList = new ArrayList<Topic>();
+    private List<Topic> topicList = new ArrayList<>();
 
     @Id
     @Column

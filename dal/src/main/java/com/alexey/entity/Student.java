@@ -13,8 +13,13 @@ public class Student extends User {
     @JoinColumn(name = "user_id")
     private int userId;
 
+    public Student(String firstName, String lastName, String email, String password, String permission, int userId) {
+        super(firstName, lastName, email, password);
+        this.permission = permission;
+        this.userId = userId;
+    }
+
     public Student() {
-        super();
     }
 
     public String getPermission() {

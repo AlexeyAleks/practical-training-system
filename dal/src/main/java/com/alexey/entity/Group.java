@@ -2,19 +2,17 @@ package com.alexey.entity;
 
 import javax.persistence.*;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 @Entity
 @Table(name = "group")
 public class Group {
-    @ManyToMany(mappedBy = "groupSet")
-    private Set<User> userSet = new HashSet<User>();
+    @ManyToMany(mappedBy = "groupList")
+    private List<User> userList = new ArrayList<>();
 
     @OneToMany
     @JoinColumn(name = "group_id")
-    private List<Course> courseList = new ArrayList<Course>();
+    private List<Course> courseList = new ArrayList<>();
 
     @Id
     @Column
@@ -23,6 +21,10 @@ public class Group {
 
     @Column
     private String name;
+
+    public Group(String name) {
+        this.name = name;
+    }
 
     public Group() {
     }

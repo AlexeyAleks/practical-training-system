@@ -1,7 +1,8 @@
 package com.alexey.entity;
 
 import javax.persistence.*;
-import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -12,7 +13,7 @@ public class User {
     @JoinTable(name = "user_group_link",
         joinColumns = { @JoinColumn(name = "user_id") },
         inverseJoinColumns = { @JoinColumn(name = "group_id") })
-    private Set<Group> groupSet = new HashSet<Group>();
+    private List<Group> groupList = new ArrayList<>();
 
     @Id
     @Column
@@ -81,12 +82,12 @@ public class User {
         this.password = password;
     }
 
-    public Set<Group> getGroupSet() {
-        return groupSet;
+    public List<Group> getGroupList() {
+        return groupList;
     }
 
-    public void setGroupSet(Set<Group> groupSet) {
-        this.groupSet = groupSet;
+    public void setGroupList(List<Group> groupList) {
+        this.groupList = groupList;
     }
 
     @Override
