@@ -56,6 +56,12 @@
   <build>
     <plugins>
       <plugin>
+        <configuration>
+          <excludes>
+            <exclude>com/alexey/entity/*</exclude>
+            <exclude>com/alexey/StarterApp.java</exclude>
+          </excludes>
+        </configuration>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
         <version>0.8.5</version>
