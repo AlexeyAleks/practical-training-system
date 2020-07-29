@@ -23,13 +23,13 @@ public class StarterApp {
         TeacherDaoImpl.getInstance().create(teacher2, session);
 
         Student student1 = new Student("Ivan", "Ivanovich", "ivan@gmail.com",
-                "ivivivi", "study", 4);
+                "iv378vi", "study", 4);
         Student student2 = new Student("Petrov", "Petrovich", "petr@gmail.com",
-                "pepepe", "study", 5);
+                "pe935pe", "study", 5);
         Student student3 = new Student("Alesya", "Alesyanovich", "ales@gmail.com",
-                "alalala", "study", 6);
+                "al735la", "study", 6);
         Student student4 = new Student("Rick", "Rickovich", "rick@gmail.com",
-                "riririri", "study", 7);
+                "ri163ri", "study", 7);
         StudentDaoImpl.getInstance().create(student1, session);
         StudentDaoImpl.getInstance().create(student2, session);
         StudentDaoImpl.getInstance().create(student3, session);
