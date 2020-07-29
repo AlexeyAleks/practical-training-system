@@ -1,4 +1,4 @@
-package com.alexey;
+package com.alexey.starter;
 
 import com.alexey.dao.impl.*;
 import com.alexey.entity.*;

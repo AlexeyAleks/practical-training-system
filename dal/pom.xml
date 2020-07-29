@@ -56,6 +56,11 @@
       <artifactId>HikariCP</artifactId>
       <version>3.4.5</version>
     </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>5.2.8.RELEASE</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -64,7 +69,8 @@
         <configuration>
           <excludes>
             <exclude>com/alexey/entity/*</exclude>
-            <exclude>com/alexey/StarterApp.java</exclude>
+            <exclude>com/alexey/starter/*</exclude>
+            <exclude>com/alexey/dao/dataSource/*</exclude>
           </excludes>
         </configuration>
         <groupId>org.jacoco</groupId>
