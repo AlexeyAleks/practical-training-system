@@ -10,8 +10,8 @@ import java.util.List;
 public class User {
     @ManyToMany
     @JoinTable(name = "user_group_link",
-        joinColumns = { @JoinColumn(name = "user_id") },
-        inverseJoinColumns = { @JoinColumn(name = "group_id") })
+            joinColumns = {@JoinColumn(name = "user_id")},
+            inverseJoinColumns = {@JoinColumn(name = "group_id")})
     private List<Group> groupList = new ArrayList<>();
 
     @Id
