@@ -16,8 +16,14 @@ public class Topic {
     @Column
     private String content;
 
-    @JoinColumn(name = "course_id")
+    @Column(name = "course_id")
     private int courseId;
+
+    public Topic(String name, String content, int courseId) {
+        this.name = name;
+        this.content = content;
+        this.courseId = courseId;
+    }
 
     public Topic() {
     }

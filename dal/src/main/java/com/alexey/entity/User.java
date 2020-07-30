@@ -15,7 +15,7 @@ public class User {
     private List<Group> groupList = new ArrayList<>();
 
     @Id
-    @Column
+    @Column(name = "user_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 

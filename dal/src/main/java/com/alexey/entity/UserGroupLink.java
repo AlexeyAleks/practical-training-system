@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Table(name = "user_group_link")
 public class UserGroupLink {
     @Id
-    @Column
+    @Column(name = "user_group_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
@@ -22,6 +22,14 @@ public class UserGroupLink {
     }
 
     public UserGroupLink() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getUserId() {

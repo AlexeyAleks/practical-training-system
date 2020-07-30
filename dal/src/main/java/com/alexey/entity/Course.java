@@ -19,8 +19,13 @@ public class Course {
     @Column
     private String name;
 
-    @JoinColumn(name = "group_id")
+    @Column(name = "group_id")
     private int groupId;
+
+    public Course(String name, int groupId) {
+        this.name = name;
+        this.groupId = groupId;
+    }
 
     public Course() {
     }

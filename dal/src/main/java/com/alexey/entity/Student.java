@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "student")
-@PrimaryKeyJoinColumn(name = "id")
+//@PrimaryKeyJoinColumn(name = "id")
 public class Student extends User {
 
     @Column

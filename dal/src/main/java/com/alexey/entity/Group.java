@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "group")
+@Table(name = "`group`")
 public class Group {
     @ManyToMany(mappedBy = "groupList")
     private List<User> userList = new ArrayList<>();
@@ -15,7 +15,7 @@ public class Group {
     private List<Course> courseList = new ArrayList<>();
 
     @Id
-    @Column
+    @Column(name = "group_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
