@@ -52,4 +52,12 @@ public class Group {
     public void setCourseList(List<Course> courseList) {
         this.courseList = courseList;
     }
+
+    @Override
+    public String toString() {
+        return "Group{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

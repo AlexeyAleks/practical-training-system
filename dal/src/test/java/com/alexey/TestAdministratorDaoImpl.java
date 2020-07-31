@@ -1,6 +1,7 @@
 package com.alexey;
 
 import com.alexey.dao.impl.AdministratorDaoImpl;
+import com.alexey.dao.impl.CourseDaoImpl;
 import com.alexey.entity.Administrator;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -68,6 +69,7 @@ public class TestAdministratorDaoImpl {
 
     @Test
     public void testGetInstance() {
+        CourseDaoImpl INSTANCE = null;
         AdministratorDaoImpl instance = AdministratorDaoImpl.getInstance();
         Assertions.assertEquals(instance, AdministratorDaoImpl.getInstance());
     }

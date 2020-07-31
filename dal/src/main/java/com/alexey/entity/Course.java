@@ -61,4 +61,13 @@ public class Course {
     public void setTopicList(List<Topic> topicList) {
         this.topicList = topicList;
     }
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", groupId=" + groupId +
+                '}';
+    }
 }

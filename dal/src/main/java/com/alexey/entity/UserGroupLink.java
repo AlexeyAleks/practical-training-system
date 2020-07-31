@@ -47,4 +47,13 @@ public class UserGroupLink {
     public void setGroupId(int groupId) {
         this.groupId = groupId;
     }
+
+    @Override
+    public String toString() {
+        return "UserGroupLink{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", groupId=" + groupId +
+                '}';
+    }
 }

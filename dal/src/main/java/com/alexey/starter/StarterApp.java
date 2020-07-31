@@ -95,7 +95,9 @@ public class StarterApp {
         UserDaoImpl.getInstance().update(foundUser1, session);
         System.out.println(UserDaoImpl.getInstance().readById(1, session));
 
-//        UserDaoImpl.getInstance().delete(foundUser1, session);
+//        UserGroupLinkDaoImpl.getInstance().delete(userGroupLink1, session);
+//        UserGroupLinkDaoImpl.getInstance().delete(userGroupLink2, session);
+//        AdministratorDaoImpl.getInstance().delete(administrator, session);
 
         session.close();
     }

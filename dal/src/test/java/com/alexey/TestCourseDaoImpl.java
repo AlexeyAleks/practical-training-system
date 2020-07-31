@@ -1,6 +1,8 @@
 package com.alexey;
 
+import com.alexey.dao.impl.CourseDaoImpl;
 import com.alexey.dao.impl.GroupDaoImpl;
+import com.alexey.entity.Course;
 import com.alexey.entity.Group;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -8,13 +10,15 @@ import org.hibernate.cfg.Configuration;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class TestGroupDaoImpl {
+public class TestCourseDaoImpl {
     @Test
     public void testCreate() {
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         Group group = new Group("group 001");
         GroupDaoImpl.getInstance().create(group, session);
+        Course course = new Course("Java Basics", 1);
+        CourseDaoImpl.getInstance().create(course, session);
         session.close();
     }
 
@@ -24,9 +28,10 @@ public class TestGroupDaoImpl {
         Session session = sessionFactory.openSession();
         Group group = new Group("group 001");
         GroupDaoImpl.getInstance().create(group, session);
-        Assertions.assertEquals("Group{id=1, name='group 001'}",
-                GroupDaoImpl.getInstance().readById(1, session).toString());
-        System.out.println(group.toString());
+        Course course = new Course("Java Basics", 1);
+        CourseDaoImpl.getInstance().create(course, session);
+        Assertions.assertEquals("Course{id=1, name='Java Basics', groupId=1}",
+                CourseDaoImpl.getInstance().readById(1, session).toString());
         session.close();
     }
 
@@ -34,13 +39,15 @@ public class TestGroupDaoImpl {
     public void testUpdate() {
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
-        Group group1 = new Group("group 001");
-        GroupDaoImpl.getInstance().create(group1, session);
-        Group group2 = GroupDaoImpl.getInstance().readById(1, session);
-        group2.setName("111");
-        GroupDaoImpl.getInstance().update(group2, session);
-        Assertions.assertEquals("Group{id=1, name='111'}",
-                GroupDaoImpl.getInstance().readById(1, session).toString());
+        Group group = new Group("group 001");
+        GroupDaoImpl.getInstance().create(group, session);
+        Course course = new Course("Java Basics", 1);
+        CourseDaoImpl.getInstance().create(course, session);
+        Course course2 = CourseDaoImpl.getInstance().readById(1, session);
+        course2.setName("Hobbit");
+        CourseDaoImpl.getInstance().update(course2, session);
+        Assertions.assertEquals("Course{id=1, name='Hobbit', groupId=1}",
+                CourseDaoImpl.getInstance().readById(1, session).toString());
         session.close();
     }
 
@@ -50,14 +57,16 @@ public class TestGroupDaoImpl {
         Session session = sessionFactory.openSession();
         Group group = new Group("group 001");
         GroupDaoImpl.getInstance().create(group, session);
-        GroupDaoImpl.getInstance().delete(group, session);
-        Assertions.assertEquals(null, GroupDaoImpl.getInstance().readById(1, session));
+        Course course = new Course("Java Basics", 1);
+        CourseDaoImpl.getInstance().create(course, session);
+        CourseDaoImpl.getInstance().delete(course, session);
+        Assertions.assertEquals(null, CourseDaoImpl.getInstance().readById(1, session));
         session.close();
     }
 
     @Test
     public void testGetInstance() {
-        GroupDaoImpl instance = GroupDaoImpl.getInstance();
-        Assertions.assertEquals(instance, GroupDaoImpl.getInstance());
+        CourseDaoImpl instance = CourseDaoImpl.getInstance();
+        Assertions.assertEquals(instance, CourseDaoImpl.getInstance());
     }
 }

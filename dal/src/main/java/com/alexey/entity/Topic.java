@@ -59,4 +59,14 @@ public class Topic {
     public void setCourseId(int courseId) {
         this.courseId = courseId;
     }
+
+    @Override
+    public String toString() {
+        return "Topic{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", content='" + content + '\'' +
+                ", courseId=" + courseId +
+                '}';
+    }
 }
