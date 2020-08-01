@@ -1,10 +1,17 @@
 package com.alexey.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.stereotype.Repository;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "administrator")
 //@PrimaryKeyJoinColumn(name = "id")
+@Repository
+@Getter
+@Setter
 public class Administrator extends User {
 
     @Id
@@ -26,31 +33,5 @@ public class Administrator extends User {
     }
 
     public Administrator() {
-    }
-
-    @Override
-    public int getId() {
-        return id;
-    }
-
-    @Override
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getPermission() {
-        return permission;
-    }
-
-    public void setPermission(String permission) {
-        this.permission = permission;
-    }
-
-    public int getUserId() {
-        return userId;
-    }
-
-    public void setUserId(int userId) {
-        this.userId = userId;
     }
 }

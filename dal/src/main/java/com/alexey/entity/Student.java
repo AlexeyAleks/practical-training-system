@@ -1,10 +1,17 @@
 package com.alexey.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.stereotype.Repository;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "student")
 //@PrimaryKeyJoinColumn(name = "id")
+@Repository
+@Getter
+@Setter
 public class Student extends User {
 
     @Column
@@ -20,21 +27,5 @@ public class Student extends User {
     }
 
     public Student() {
-    }
-
-    public String getPermission() {
-        return permission;
-    }
-
-    public void setPermission(String permission) {
-        this.permission = permission;
-    }
-
-    public int getUserId() {
-        return userId;
-    }
-
-    public void setUserId(int userId) {
-        this.userId = userId;
     }
 }

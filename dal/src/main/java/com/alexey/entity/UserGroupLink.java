@@ -1,9 +1,16 @@
 package com.alexey.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.stereotype.Repository;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "user_group_link")
+@Repository
+@Getter
+@Setter
 public class UserGroupLink {
     @Id
     @Column(name = "user_group_id")
@@ -22,30 +29,6 @@ public class UserGroupLink {
     }
 
     public UserGroupLink() {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getUserId() {
-        return userId;
-    }
-
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
-
-    public int getGroupId() {
-        return groupId;
-    }
-
-    public void setGroupId(int groupId) {
-        this.groupId = groupId;
     }
 
     @Override

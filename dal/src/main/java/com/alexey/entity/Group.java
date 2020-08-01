@@ -1,11 +1,18 @@
 package com.alexey.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.stereotype.Repository;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "`group`")
+@Repository
+@Getter
+@Setter
 public class Group {
     @ManyToMany(mappedBy = "groupList")
     private List<User> userList = new ArrayList<>();
@@ -27,30 +34,6 @@ public class Group {
     }
 
     public Group() {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public List<Course> getCourseList() {
-        return courseList;
-    }
-
-    public void setCourseList(List<Course> courseList) {
-        this.courseList = courseList;
     }
 
     @Override
