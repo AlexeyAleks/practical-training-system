@@ -7,6 +7,11 @@ import javax.persistence.*;
 //@PrimaryKeyJoinColumn(name = "id")
 public class Administrator extends User {
 
+    @Id
+    @Column(name = "administrator_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
     @Column
     private String permission;
 
@@ -21,6 +26,16 @@ public class Administrator extends User {
     }
 
     public Administrator() {
+    }
+
+    @Override
+    public int getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getPermission() {
