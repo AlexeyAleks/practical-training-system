@@ -28,7 +28,7 @@ public class TestAdministratorServiceImpl {
         Administrator administrator = new Administrator("Bob", "Bobovich", "Bob@gmail.com",
                 "111w2","control", 1);
         AdministratorServiceImpl.getInstance().create(administrator, session);
-        Assertions.assertEquals("User{id=0, firstName='Bob', lastName='Bobovich'," +
+        Assertions.assertEquals("User{id=1, firstName='Bob', lastName='Bobovich'," +
                         " email='Bob@gmail.com', password='111w2'}",
                 AdministratorServiceImpl.getInstance().readById(1, session).toString());
         session.close();
@@ -49,7 +49,7 @@ public class TestAdministratorServiceImpl {
         administrator2.setPermission("control");
         administrator2.setUserId(1);
         AdministratorServiceImpl.getInstance().update(administrator2, session);
-        Assertions.assertEquals("User{id=0, firstName='Hobbit', lastName='Hobbitovich'," +
+        Assertions.assertEquals("User{id=1, firstName='Hobbit', lastName='Hobbitovich'," +
                 " email='Hob@gmail.com', password='HHH'}",
                 AdministratorServiceImpl.getInstance().readById(1, session).toString());
         session.close();

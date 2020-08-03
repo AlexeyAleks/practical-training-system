@@ -88,12 +88,12 @@ public class StarterAppDal {
         System.out.println(foundUser1);
         System.out.println(foundUser2);
 
-        foundUser1.setFirstName("Rob");
-        foundUser1.setLastName("Robokovich");
-        foundUser1.setEmail("Rob@gmail.com");
-        foundUser1.setPassword("RRRw2");
-        UserDaoImpl.getInstance().update(foundUser1, session);
-        System.out.println(UserDaoImpl.getInstance().readById(1, session));
+//        foundUser1.setFirstName("Rob");
+//        foundUser1.setLastName("Robokovich");
+//        foundUser1.setEmail("Rob@gmail.com");
+//        foundUser1.setPassword("RRRw2");
+//        UserDaoImpl.getInstance().update(foundUser1, session);
+//        System.out.println(UserDaoImpl.getInstance().readById(1, session));
 
 //        UserGroupLinkDaoImpl.getInstance().delete(userGroupLink1, session);
 //        UserGroupLinkDaoImpl.getInstance().delete(userGroupLink2, session);

@@ -13,11 +13,6 @@ import javax.persistence.*;
 @Setter
 public class Administrator extends User {
 
-    @Id
-    @Column(name = "administrator_id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-
     @Column
     private String permission;
 
