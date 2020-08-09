@@ -1,6 +1,7 @@
 package com.alexey.service;
 
-import com.alexey.entity.Course;
+import com.alexey.dal.entity.Course;
 
 public interface CourseService extends Service<Course> {
+
 }

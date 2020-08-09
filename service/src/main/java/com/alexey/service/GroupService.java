@@ -1,6 +1,7 @@
 package com.alexey.service;
 
-import com.alexey.entity.Group;
+import com.alexey.dal.entity.Group;
 
 public interface GroupService extends Service<Group> {
+
 }

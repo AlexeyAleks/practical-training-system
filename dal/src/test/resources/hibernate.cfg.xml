@@ -10,13 +10,13 @@
         <property name="dialect">org.hibernate.dialect.H2Dialect</property>
         <property name="hbm2ddl.auto">create</property>
 
-        <mapping class="com.alexey.entity.User"/>
-        <mapping class="com.alexey.entity.Administrator"/>
-        <mapping class="com.alexey.entity.Teacher"/>
-        <mapping class="com.alexey.entity.Student"/>
-        <mapping class="com.alexey.entity.Group"/>
-        <mapping class="com.alexey.entity.UserGroupLink"/>
-        <mapping class="com.alexey.entity.Course"/>
-        <mapping class="com.alexey.entity.Topic"/>
+        <mapping class="com.alexey.dal.entity.User"/>
+        <mapping class="com.alexey.dal.entity.Administrator"/>
+        <mapping class="com.alexey.dal.entity.Teacher"/>
+        <mapping class="com.alexey.dal.entity.Student"/>
+        <mapping class="com.alexey.dal.entity.Group"/>
+        <mapping class="com.alexey.dal.entity.UserGroupLink"/>
+        <mapping class="com.alexey.dal.entity.Course"/>
+        <mapping class="com.alexey.dal.entity.Topic"/>
     </session-factory>
 </hibernate-configuration>

@@ -1,6 +1,6 @@
-package com.alexey.service;
+package com.alexey.dal.dao;
 
-public interface Service<T> {
+public interface Dao<T> {
     void create(T t);
 
     T readById(int id);
